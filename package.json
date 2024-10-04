@@ -1,6 +1,6 @@
 {
   "name": "infosnap",
-  "displayName": "infosnap",
+  "displayName": "InfoSnap",
   "description": "Quickly copy and paste your personal information like address, email, phone, and social links with simple commands in VS Code.",
   "version": "0.0.1",
   "engines": {
@@ -9,7 +9,6 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -28,10 +27,6 @@
       {
         "command": "quickInsert.insertSocialLinks",
         "title": "Insert Social Links"
-      },
-      {
-        "command": "quickInsert.setInformation",
-        "title": "Set Information"
       }
     ],
     "configuration": {
@@ -60,24 +55,24 @@
         }
       }
     }
-},
-"scripts": {
-  "vscode:prepublish": "npm run compile",
-  "compile": "tsc -p ./",
-  "watch": "tsc -watch -p ./",
-  "pretest": "npm run compile && npm run lint",
-  "lint": "eslint src",
-  "test": "vscode-test"
-},
-"devDependencies": {
-  "@types/vscode": "^1.94.0",
-  "@types/mocha": "^10.0.8",
-  "@types/node": "20.x",
-  "@typescript-eslint/eslint-plugin": "^8.7.0",
-  "@typescript-eslint/parser": "^8.7.0",
-  "eslint": "^9.11.1",
-  "typescript": "^5.6.2",
-  "@vscode/test-cli": "^0.0.10",
-  "@vscode/test-electron": "^2.4.1"
-}
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.11.1",
+    "typescript": "^5.6.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
 }
