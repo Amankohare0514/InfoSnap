@@ -2,7 +2,7 @@
   "name": "infosnap",
   "displayName": "InfoSnap",
   "description": "Quickly copy and paste your personal information like address, email, phone, and social links with simple commands in VS Code.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.94.0"
   },
@@ -10,6 +10,19 @@
     "Other"
   ],
   "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:quickInsert.insertAddress",
+    "onCommand:quickInsert.insertEmail",
+    "onCommand:quickInsert.insertPhone",
+    "onCommand:quickInsert.insertSocialLinks",
+    "onCommand:quickInsert.insertAboutMe",
+    "onCommand:quickInsert.insertMobile",
+    "onCommand:quickInsert.insertInstagram",
+    "onCommand:quickInsert.insertPortfolio",
+    "onCommand:quickInsert.insertLinkedIn",
+    "onCommand:quickInsert.insertTwitter",
+    "onCommand:quickInsert.insertGithub"
+  ],
   "contributes": {
     "commands": [
       {
@@ -27,6 +40,34 @@
       {
         "command": "quickInsert.insertSocialLinks",
         "title": "Insert Social Links"
+      },
+      {
+        "command": "quickInsert.insertAboutMe",
+        "title": "Insert About Me"
+      },
+      {
+        "command": "quickInsert.insertMobile",
+        "title": "Insert Mobile Number"
+      },
+      {
+        "command": "quickInsert.insertInstagram",
+        "title": "Insert Instagram Link"
+      },
+      {
+        "command": "quickInsert.insertPortfolio",
+        "title": "Insert Portfolio Link"
+      },
+      {
+        "command": "quickInsert.insertLinkedIn",
+        "title": "Insert LinkedIn Link"
+      },
+      {
+        "command": "quickInsert.insertTwitter",
+        "title": "Insert Twitter Link"
+      },
+      {
+        "command": "quickInsert.insertGithub",
+        "title": "Insert GitHub Link"
       }
     ],
     "configuration": {
@@ -52,6 +93,41 @@
           "type": "string",
           "default": "",
           "description": "Your social links to be inserted."
+        },
+        "quickInsert.aboutMe": {
+          "type": "string",
+          "default": "",
+          "description": "About you to be inserted."
+        },
+        "quickInsert.mobile": {
+          "type": "string",
+          "default": "",
+          "description": "Your mobile number to be inserted."
+        },
+        "quickInsert.instagram": {
+          "type": "string",
+          "default": "",
+          "description": "Your Instagram link to be inserted."
+        },
+        "quickInsert.portfolio": {
+          "type": "string",
+          "default": "",
+          "description": "Your portfolio link to be inserted."
+        },
+        "quickInsert.linkedin": {
+          "type": "string",
+          "default": "",
+          "description": "Your LinkedIn link to be inserted."
+        },
+        "quickInsert.twitter": {
+          "type": "string",
+          "default": "",
+          "description": "Your Twitter link to be inserted."
+        },
+        "quickInsert.github": {
+          "type": "string",
+          "default": "",
+          "description": "Your GitHub link to be inserted."
         }
       }
     }
