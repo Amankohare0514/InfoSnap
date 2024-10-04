@@ -6,7 +6,7 @@
   "publisher": "AmanKohare5",
   "icon": "icon.png",
   "engines": {
-    "vscode": "^1.93.0"
+    "vscode": "^1.93.1"
   },
   "categories": [
     "Other"
