@@ -3,6 +3,7 @@
   "displayName": "InfoSnap",
   "description": "Quickly copy and paste your personal information like address, email, phone, and social links with simple commands in VS Code.",
   "version": "0.0.2",
+  "publisher": "AmanKohare5", 
   "engines": {
     "vscode": "^1.94.0"
   },
@@ -136,6 +137,7 @@
     "type": "git",
     "url": "https://github.com/Amankohare0514/InfoSnap" 
   },
+  "license": "MIT",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
